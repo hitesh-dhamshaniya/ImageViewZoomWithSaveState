@@ -13,7 +13,9 @@ class PhotoViewPageAdapter(fragmentManager: FragmentManager) : FragmentPagerAdap
         imageList.add("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")
     }
 
-    override fun getItem(position: Int) = PhotoViewFragment.newInstance(imageList[position])
+    override fun getItem(position: Int) = PhotoViewFragment.newInstance(position, imageList[position])
 
     override fun getCount() = imageList.size
+
+
 }
