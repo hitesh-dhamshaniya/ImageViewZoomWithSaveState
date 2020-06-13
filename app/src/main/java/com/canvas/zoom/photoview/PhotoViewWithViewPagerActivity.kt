@@ -10,7 +10,8 @@ class PhotoViewWithViewPagerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_photoview)
-        title = "Using PhotoView with View Pager"
+
+        title = "Keep Zoom inside view pager"
         viewPagerPhotoView.adapter = PhotoViewPageAdapter(supportFragmentManager)
         viewPagerPhotoView.offscreenPageLimit = 5
     }
